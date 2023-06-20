@@ -7,3 +7,6 @@
 [submodule "math_submodule"]
 	path = math_submodule
 	url = git@gitlab.ethz.ch:formularies/math_submodule.git
+[submodule "dl_submodule"]
+	path = dl_submodule
+	url = git@github.com:grpollak/dl_submodule.git
