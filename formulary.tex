@@ -55,7 +55,8 @@
 % \input{mysubmodule_submodule/math.tex}
 % Other very usefull packages
 % ------------------------------------------------------------------------------
-\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+% \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny, disable]{todonotes}
 \usepackage{wrapfig}
 \usepackage[skip=0pt]{subcaption}
 \usepackage{tabularx}
@@ -86,16 +87,24 @@
 % Document begin
 % ==============================================================================
 \begin{document}
+% \tableofcontents
+% \newpage
 % Chapter 1
-% ------------------------------------------------------------------------------ 
+% ------------------------------------------------------------------------------
 \section*{Machine Learning Submodule}\label{sec:ml_appendix}
   \input{ml_submodule/ml.tex}
 \newpage
 \section*{Deep Learning Submodule}
   \input{dl_submodule/dl.tex}
-% \newpage
-% \section*{Math Submodule}
-%   \input{math_submodule/math.tex}
+\newpage
+\section*{Math Submodule}
+  \input{math_submodule/math.tex}
+\newpage
+% ======================================================================
+% Bibliogprahy
+% ======================================================================
+\bibliographystyle{alpha}
+\bibliography{bibliography}
 % ======================================================================
 % Todo
 % ======================================================================
